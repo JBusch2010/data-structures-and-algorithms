@@ -8,9 +8,10 @@ Write a function named countNumberOfElements that, given an array as input, uses
 Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
-const countNumberOfElements = (arr) => {
-  // Solution code here...
-};
+const countNumberOfElements = (arr) =>
+// Solution code here...
+  arr.reduce(val => val += 1, 0)
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -70,6 +71,10 @@ let starWarsData = [{
 
 const returnNames = (arr) => {
   // Solution code here...
+  return arr.reduce((character, char) => {
+    character.push(char.name);
+    return character;
+  }, [])
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -135,6 +140,13 @@ const characters = [
 
 const countNumberOfChildren = (arr) => {
   // Solution code here...
+  return arr.reduce((totalChildren, char) => {
+    if(char.children) {
+      totalChildren = totalChildren + (char.children.length);
+      return totalChildren;
+    }
+    return totalChildren;
+  }, 0)
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -243,7 +255,7 @@ describe('Testing challenge 1', () => {
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should return an array continaing the names of the characters', () => {
     expect(returnNames(starWarsData)).toStrictEqual([ 'Luke Skywalker', 'C-3PO', 'R2-D2', 'Darth Vader', 'Leia Organa' ]);
     expect(returnNames(starWarsData).length).toStrictEqual(5);
@@ -256,7 +268,7 @@ xdescribe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return the total number of children', () => {
     expect(countNumberOfChildren(characters)).toStrictEqual(14);
   });
