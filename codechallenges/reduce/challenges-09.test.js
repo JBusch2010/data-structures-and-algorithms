@@ -138,7 +138,7 @@ const countNumberOfChildren = (arr) => {
 };
 
 /* ------------------------------------------------------------------------------------------------
-CHALLENGE 5
+CHALLENGE 5 - STRETCH GOAL
 
 Write a function that, given an array of numbers as input, uses reduce to calculate the array's average value.
 
@@ -150,7 +150,7 @@ const calculateAverage = (arr) => {
 };
 
 /* ------------------------------------------------------------------------------------------------
-CHALLENGE 6
+CHALLENGE 6 - STRETCH GOAL
 
 Write a function named countPrimeNumbers that, given an array elements as input, uses reduce to count the number of elements that are prime numbers.
 
