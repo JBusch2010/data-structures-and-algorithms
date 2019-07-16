@@ -153,7 +153,7 @@ const countNumberOfChildren = (arr) => {
 };
 
 /* ------------------------------------------------------------------------------------------------
-CHALLENGE 5 - STRETCH GOAL
+CHALLENGE 5
 
 Write a function that, given an array of numbers as input, uses reduce to calculate the array's average value.
 
@@ -162,10 +162,17 @@ Hint: The accumulator should begin as { count: 0, sum: 0 }
 
 const calculateAverage = (arr) => {
   // Solution code here...
+  let result = arr.reduce((total, num) => {
+    total.count += 1;
+    total.sum += num;
+    return total;
+  }, {count: 0, sum: 0})
+
+  return result.sum/result.count;
 };
 
 /* ------------------------------------------------------------------------------------------------
-CHALLENGE 6 - STRETCH GOAL
+CHALLENGE 6
 
 Write a function named countPrimeNumbers that, given an array elements as input, uses reduce to count the number of elements that are prime numbers.
 
@@ -183,6 +190,12 @@ const isPrime = (value) => {
 
 const countPrimeNumbers = (arr) => {
   // Solution code here...
+  return arr.reduce((count, value) => {
+    if(isPrime(value)){
+      count += 1;
+    }
+    return count;
+  }, 0);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -277,13 +290,13 @@ describe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should return the average of the numbers in the array', () => {
     expect(calculateAverage([18, 290, 37, 4, 55, 16, 7, 85 ])).toStrictEqual(64);
   });
 });
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   test('It should return a count of the prime numbers in the array', () => {
     expect(countPrimeNumbers([1, 2, 13, 64, 45, 56, 17, 8])).toStrictEqual(3);
   });
