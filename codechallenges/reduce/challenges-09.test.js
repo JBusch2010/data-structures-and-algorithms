@@ -242,7 +242,7 @@ const extractStat = (statName, arr) => {
 };
 
 /* ------------------------------------------------------------------------------------------------
-CHALLENGE 8 - Stretch Goal
+CHALLENGE 8 -- Stretch Goal
 
 Write a function named extractChildren that, given the array of characters from challenge 4, accomplishes the following:
 
