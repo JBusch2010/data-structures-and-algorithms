@@ -94,16 +94,17 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  var someKid = true;
-
-  arr.forEach(person => {
-    const personValues = Object.values(person);
-
-    if(personValues[0] === character){
-      if( personValues[2])
+  // Solution code here...
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i].name === character) {
+      if (Object.values(arr[i])[2].length > 0) {
+        return true;
+      } else {
+        return false;
+      }
     }
   }
-
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -115,6 +116,15 @@ The input and output of this function are the same as the input and output from 
 
 const hasChildrenEntries = (arr, character) => {
   // Solution code here...
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i].name === character) {
+      if (Object.entries(arr[i])[2][1].length > 0) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -125,6 +135,7 @@ Write a function named totalCharacters that takes in an array and returns the nu
 
 const totalCharacters = (arr) => {
   // Solution code here...
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -178,13 +189,13 @@ Run your tests from the console: jest challenges-06.test.js
 
 ------------------------------------------------------------------------------------------------ */
 
-xdescribe('Testing challenge 1', () => {
+describe('Testing challenge 1', () => {
   test('It should return the keys from an object', () => {
     expect(getCourseKeys(courseInfo)).toStrictEqual([ 'name', 'duration', 'topics', 'finalExam' ]);
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should return an array of the names of the houses', () => {
     expect(getHouses(characters)).toStrictEqual([ 'Stark', 'Arryn', 'Lannister', 'Targaryen', 'Tyrell', 'Stark', 'Snow' ]);
     expect(getHouses(characters).length).toStrictEqual(7);
@@ -201,7 +212,7 @@ describe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return true for characters that have children', () => {
     expect(hasChildrenEntries(characters, 'Eddard')).toBeTruthy();
   });
