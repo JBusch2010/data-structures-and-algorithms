@@ -29,7 +29,7 @@ const grandTotal = (stores) => {
   for (let i = 0; i < hoursOpen.length; i++) {
     let temp = 0;
 
-    for (let j = 0; j < stores.length; j++) {
+    for (let j = 0; j < cookieStores.length; j++) {
       temp += stores[j][i];
     }
 
