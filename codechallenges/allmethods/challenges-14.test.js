@@ -10,18 +10,12 @@ For example, ['apple', 'banana', 'MacGyver'] returns ['Apple', 'Banana', 'MacGyv
 
 const toTitleCase = (arr) => {
   // Solution code here...
-  return arr.map((arr) => arr.charAt(0))
+  return arr.map(val => {
+    return val[0].toUpperCase() + val.slice(1);
+  });
 };
-function uppercase(str)
-{
-  var array1 = str.split(' ');
-  var newarray1 = [];
-    
-  for(var x = 0; x < array1.length; x++){
-      newarray1.push(array1[x].charAt(0).toUpperCase()+array1[x].slice(1));
-  }
-  return newarray1.join(' ');
-/* ------------------------------------------------------------------------------------------------
+/* 
+------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
 Write a function named biggerThanLuke that, given the Star Wars data, below, returns the names of the characters whose mass is greater than Luke's.
@@ -127,7 +121,8 @@ https://secure.com returns true because the URL is secure
 https:/missingslash.org returns false because the URL is malformed
 ------------------------------------------------------------------------------------------------ */
 const isSecure = (url) => {
-// Solution code here...
+// Solution code here..
+  return url.includes('https://');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -209,7 +204,7 @@ xdescribe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should check if url is https', () => {
 
     expect(isSecure('http://www.insecure.com')).toBe(false);
