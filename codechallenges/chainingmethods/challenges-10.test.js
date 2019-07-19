@@ -37,7 +37,7 @@ For example, [[1, 2, 3, 4, 5], [6, 7, 2, 4, 5, 7], [9, 2, 3, 6,]] returns 66.
 ------------------------------------------------------------------------------------------------ */
 
 const totalSum = (input) => {
-  // Solution code here...
+  // Solution code here....
   return input.reduce((total, val) => {
     let t = val.reduce((total2, val2) => {
       total2 += val2;
