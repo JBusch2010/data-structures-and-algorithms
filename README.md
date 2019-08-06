@@ -1,5 +1,14 @@
 # data-structures-and-algorithms
 
-First and foremost I want to thank Jack for helping me through question 5. and giving me a good start on question 6! 
+# Reverse an Array
+Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
 
-used https://www.w3schools.com/js/js_array_sort.asp for challenges-03
+## Challenge
+return an array with elements in reversed order.
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+## Solution
+<!-- Embedded whiteboard image -->
+![reversearray](assets/reversearray.jpg)
