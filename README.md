@@ -1,21 +1,24 @@
 # data-structures-and-algorithms
 
-# Reverse an Array
-Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
+first 10 labs for java 401
 
-## Challenge
-return an array with elements in reversed order.
+Lab 1 starts. - Working feature 1 and 2 -
 
-## Approach & Efficiency
-I knew I would need a for loop to iterate over the array. 
-For Big 0, i still don't really understand it so I referred to: https://www.interviewcake.com/article/java/big-o-notation-time-and-space-complexity - should be O(1) - because it requires one step. 
+Completed feature 1 - pluralize. used for reference: http://boulter.com/blog/2005/04/22/5-ways-to-pluralize/
 
-## Solution
-![reversearray](assets/reversearray.jpg)
+Completed feature 2 - coin flip. used for reference: https://stackoverflow.com/questions/24174078/simple-coin-toss-using-random-class-in-java-the-do-while-loop-doesnt-seem-to-g - modified some things from the code review as well. 
 
-credits:
-the reading for Day 2 where I chose to go with a regular for loop: https://www.baeldung.com/java-loops
+Lab 1 Ends.
 
-needed help with syntax so I looked through stack overflow: https://stackoverflow.com/questions/2137755/how-do-i-reverse-an-int-array-in-java
-
-along with: https://www.java67.com/2016/10/3-ways-to-reverse-array-in-java-coding-interview-question.html
+# Table of Contents
+├── LICENSE
+├── README.md
+├── assets
+│   └── reversearray.jpg
+├── code401challenges
+│   └── array_reverse
+│       ├── ArrayReverse.class
+│       └── ArrayReverse.java
+    └── array_shift
+│       ├── ArrayShift.class
+│       └── ArrayShift.java
