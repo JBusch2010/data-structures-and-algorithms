@@ -4,6 +4,7 @@
 1. Array Reverse
 2. Array Shift
 3. Binary Search
+4. Linked List
 
 --------------------------------------------------------------
 
@@ -75,3 +76,53 @@ Space: O(1)
 
 #### Solution
 ![Whiteboard](assets/binarysearch.jpg)
+
+--------------------------------------------------------------
+
+### 4. LinkedList
+
+#### Challenge
+Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
+
+#### Approach & Efficiency
+Defined a methods I needed and made the constructor to create new lists
+
+Big O Notation
+Time: O(log(n))
+Space: O(1)
+
+### Code
+[Github](https://github.com/JBusch2010/data-structures-and-algorithms/tree/master/linked_list)
+
+### Contributions
+- Fabion Brooks
+- //https://www.geeksforgeeks.org/linked-list-set-1-introduction/
+- https://stackoverflow.com/questions/6119392/junit-testing-for-a-boolean-method
+
+--------------------------------------------------------------
+
+### 5. LinkedListPart2
+
+#### Challenge
+Write methods that add a node at the end and before and after a selected node
+
+#### Approach & Efficiency
+For append - iterate through the list until next = null then add a val
+For addbefore - it thru the list until node, create new node, link new node
+
+Big O Notation
+Time: O(log(n))
+Space: O(1)
+
+### Code
+[Github](https://github.com/JBusch2010/data-structures-and-algorithms/tree/master/linked_list)
+
+### Contributions
+- Fabion Brooks
+- Jack Daniels
+- https://www.javatpoint.com/java-program-to-insert-a-new-node-at-the-end-of-the-singly-linked-list
+- https://stackoverflow.com/questions/5236486/adding-items-to-end-of-linked-list
+
+#### Solution
+![Whiteboard](./linkedlist2.jpg)
+
