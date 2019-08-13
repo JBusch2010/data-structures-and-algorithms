@@ -124,5 +124,5 @@ Space: O(1)
 - https://stackoverflow.com/questions/5236486/adding-items-to-end-of-linked-list
 
 #### Solution
-![Whiteboard](./linkedlist2.jpg)
+![Whiteboard](assets/linkedlist2.jpg)
 

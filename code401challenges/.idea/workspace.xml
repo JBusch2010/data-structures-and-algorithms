@@ -3,9 +3,37 @@
   <component name="ChangeListManager">
     <list default="true" id="d12625e0-c782-48fa-b40d-6dab8e25c05f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/code401challenges/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code401challenges/BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linked_list/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/libraries/Gradle__com_google_code_findbugs_jsr305_3_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/libraries/Gradle__com_google_errorprone_error_prone_annotations_2_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/libraries/Gradle__com_google_guava_failureaccess_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/libraries/Gradle__com_google_guava_guava_27_1_jre.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/libraries/Gradle__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/libraries/Gradle__com_google_j2objc_j2objc_annotations_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/libraries/Gradle__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/libraries/Gradle__org_checkerframework_checker_qual_2_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/libraries/Gradle__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/modules/linked_list.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/modules/linked_list.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/linked_list.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/src/main/java/linked_list/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/src/main/java/linked_list/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/src/test/java/linked_list/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked_list/src/test/java/linked_list/LinkedListTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
