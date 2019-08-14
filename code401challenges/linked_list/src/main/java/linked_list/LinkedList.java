@@ -37,7 +37,7 @@ public class LinkedList {
         LinkedList list = new LinkedList();
 
         //Fabion helped me with this part and structuring it properly
-        for(int i = 0; i < 3; i++) {
+        for(int i = 0; i < 10; i++) {
             list.insert(i);
             System.out.println(list.head.data);
         }
@@ -46,6 +46,7 @@ public class LinkedList {
         list.append(11);
         list.insertBefore(0, 4);
         list.insertAfter(0, 5);
+        list.kNodeFromEnd(5);
 //        list.toString();
 
     }
@@ -137,6 +138,28 @@ public class LinkedList {
             current = current.next;
             System.out.println(newNode.data);
         }
+    }
+
+    //https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/
+    public void kNodeFromEnd(int k) {
+        int len = 0;
+        Node temp =  head;
+
+        //count the number of nodes in the list
+        while(temp != null){
+            temp = temp.next;
+            len++;
+
+        }
+        //check if length of list is longer than k
+        if (len < k)
+            return;
+
+        temp = head;
+
+        for(int i = 1; i < len - k + 1; i++)
+            temp = temp.next;
+        System.out.println(temp.data);
     }
 }
 
