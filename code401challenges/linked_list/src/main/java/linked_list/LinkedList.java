@@ -43,7 +43,7 @@ public class LinkedList {
         }
 
         list.includes(0);
-        list.append(11);
+        list.append(13);
         list.insertBefore(0, 4);
         list.insertAfter(0, 5);
         list.kNodeFromEnd(5);
@@ -160,6 +160,13 @@ public class LinkedList {
         for(int i = 1; i < len - k + 1; i++)
             temp = temp.next;
         System.out.println(temp.data);
+    }
+
+    public void mergeLists(LinkedList list1, LinkedList list2) {
+        Node mergedList = null;
+        while (list1 != null && list2 != null) {
+            
+        }
     }
 }
 

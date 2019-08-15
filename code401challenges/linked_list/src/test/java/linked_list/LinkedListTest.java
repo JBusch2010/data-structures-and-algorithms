@@ -17,4 +17,8 @@ public class LinkedListTest {
         assertFalse("This should return false", list.includes(4));
         assertTrue("This should return true", list.includes(3));
     }
+
+    @Test
+    public void mergeListsTest() {
+    }
 }
