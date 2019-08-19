@@ -6,7 +6,8 @@
 3. Binary Search
 4. Linked List
 5. Linked List Append, InsertBefore, InsertAfter
-6. More Linked List
+6. Linked List K'th Node
+7. Linked List Merge
 
 --------------------------------------------------------------
 
@@ -81,7 +82,7 @@ Space: O(1)
 
 --------------------------------------------------------------
 
-### 4. LinkedList
+### 4. Linked List
 
 #### Challenge
 Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
@@ -133,7 +134,7 @@ Space: O(1)
 
 --------------------------------------------------------------
 
-### 5. Linked List K'th Node
+### 6. Linked List K'th Node
 
 #### Challenge
 Given a Linked List and a number k, write a method that returns the value at the k’th node from the end of the Linked List.
@@ -164,7 +165,7 @@ Space: O(1)
 
 --------------------------------------------------------------
 
-### 6. Linked List Merge
+### 7. Linked List Merge
 
 #### Challenge
 Write a function called mergeLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
