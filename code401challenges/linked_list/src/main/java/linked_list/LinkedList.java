@@ -10,14 +10,14 @@ public class LinkedList {
         int data;
         Node next;
 
-        Node (int d) {
+        Node(int d) {
             data = d;
             next = null;
         }
     }
 
     public boolean includes(int data) {
-        Node n  = head;
+        Node n = head;
         while (n != null) {
             if (n.data == data) {
                 System.out.println(n.data + " true");
@@ -37,7 +37,7 @@ public class LinkedList {
         LinkedList list = new LinkedList();
 
         //Fabion helped me with this part and structuring it properly
-        for(int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {
             list.insert(i);
             System.out.println(list.head.data);
         }
@@ -78,7 +78,7 @@ public class LinkedList {
             return;
         }
         //looping until null is found
-        while(current != null) {
+        while (current != null) {
             if (current.next == null) {
                 // creates new node
                 current.next = newNode;
@@ -105,7 +105,7 @@ public class LinkedList {
         }
 
         //while node isn't null create new node before selected node/data
-        while(current != null) {
+        while (current != null) {
             if (current.next.data == data) {
                 newNode.next = current.next;
                 current.next = newNode;
@@ -128,7 +128,7 @@ public class LinkedList {
         }
 
         //while node isn't null create new node after selected node/data
-        while(current != null) {
+        while (current != null) {
             if (current.data == data) {
                 newNode.next = current.next;
                 current.next = newNode;
@@ -143,10 +143,10 @@ public class LinkedList {
     //https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/
     public void kNodeFromEnd(int k) {
         int len = 0;
-        Node temp =  head;
+        Node temp = head;
 
         //count the number of nodes in the list
-        while(temp != null){
+        while (temp != null) {
             temp = temp.next;
             len++;
 
@@ -157,17 +157,14 @@ public class LinkedList {
 
         temp = head;
 
-        for(int i = 1; i < len - k + 1; i++)
+        for (int i = 1; i < len - k + 1; i++)
             temp = temp.next;
         System.out.println(temp.data);
     }
-
-    public void mergeLists(LinkedList list1, LinkedList list2) {
-        Node mergedList = null;
-        while (list1 != null && list2 != null) {
-            
-        }
-    }
 }
+
+//    public static Node merge(Node head1, Node head2) {
+//
+//}
 
 
