@@ -8,6 +8,7 @@
 5. Linked List Append, InsertBefore, InsertAfter
 6. Linked List K'th Node
 7. Linked List Merge
+8. Stacks and Queues
 
 --------------------------------------------------------------
 
@@ -191,3 +192,23 @@ Space: O(1)
 #### Solution
 ![Whiteboard](assets/mergelist.jpg)
 
+
+--------------------------------------------------------------
+
+### 8. Stacks and Queues
+
+#### Challenge
+Create node, stack, and queue classes and create methods for them to pop and push nodes.
+
+Big O Notation
+Time: O(1)
+Space: O(1)
+
+### Code
+[Github](https://github.com/JBusch2010/data-structures-and-algorithms/tree/master/code401challenges/stacksandqueues/src/main/java/stacksandqueues)
+
+[Tests](https://github.com/JBusch2010/data-structures-and-algorithms/tree/master/code401challenges/stacksandqueues/src/test/java/stacksandqueues)
+
+### Contributions
+- Fabion Brooks
+- Chris Coulon
