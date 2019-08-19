@@ -5,6 +5,8 @@
 2. Array Shift
 3. Binary Search
 4. Linked List
+5. Linked List Again
+6. More Linked List
 
 --------------------------------------------------------------
 
@@ -125,4 +127,61 @@ Space: O(1)
 
 #### Solution
 ![Whiteboard](assets/linkedlist2.jpg)
+
+--------------------------------------------------------------
+
+### 5. LinkedListAgain
+
+#### Challenge
+Given a Linked List and a number k, write a method that returns the value at the k’th node from the end of the Linked List.
+
+#### Approach & Efficiency
+- Need a method that takes in k.
+- identify the end of the list
+- create a var that tracks the length of the list
+- take the length and subtract k
+
+Big O Notation
+Time: O(n)
+Space: O(1)
+
+### Code
+[Github](https://github.com/JBusch2010/data-structures-and-algorithms/blob/master/code401challenges/linked_list/src/main/java/linked_list/LinkedList.java)
+
+### Contributions
+- Fabion Brooks
+- Chris Coulon
+- https://www.javatpoint.com/java-program-to-insert-a-new-node-at-the-end-of-the-singly-linked-list
+- https://stackoverflow.com/questions/5236486/adding-items-to-end-of-linked-list
+- https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/
+
+#### Solution
+![Whiteboard](assets/linkedlist3.jpg)
+![Whiteboard](assets/linkedlist3-.jpg)
+
+--------------------------------------------------------------
+
+### 6. LinkedListAgain
+
+#### Challenge
+Write a function called mergeLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
+
+#### Approach & Efficiency
+- create an empty LL
+- for each LL iterate through each node and add them to new list
+- return list
+
+Big O Notation
+Time: O(2)
+Space: O(1)
+
+### Code
+[Github](https://github.com/JBusch2010/data-structures-and-algorithms/blob/master/code401challenges/linked_list/src/main/java/linked_list/LinkedList.java)
+
+### Contributions
+- Manish KC
+- Chris Coulon
+
+#### Solution
+![Whiteboard](assets/mergelist.jpg)
 
