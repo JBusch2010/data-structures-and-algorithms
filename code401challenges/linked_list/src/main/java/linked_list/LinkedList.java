@@ -3,10 +3,10 @@ package linked_list;
 
 //the head of the list
 public class LinkedList {
-    public Node head;
+    public static Node head;
 
     //link list node
-    static class Node {
+    public static class Node {
         int data;
         Node next;
 
@@ -14,6 +14,25 @@ public class LinkedList {
             data = d;
             next = null;
         }
+    }
+
+    //method for the simple linked list
+    public void main(String[] args) {
+        //starts with empty linkedlist
+        LinkedList list = new LinkedList();
+
+        //Fabion helped me with this part and structuring it properly
+        for (int i = 0; i < 10; i++) {
+            list.insert(i);
+            System.out.println(list.head.data);
+        }
+
+//        list.includes(0);
+//        list.append(1);
+//        list.insertBefore(4, 2);
+//        list.insertAfter(0, 5);
+//        list.kNodeFromEnd(5);
+//        list.toString();
     }
 
     public boolean includes(int data) {
@@ -31,41 +50,32 @@ public class LinkedList {
         return false;
     }
 
-    //method for the simple linked list
-    public static void main(String[] args) {
-        //starts with empty linkedlist
-        LinkedList list = new LinkedList();
+    public static void insert (int value) {
+        Node newNode = new Node(value);
 
-        //Fabion helped me with this part and structuring it properly
-        for (int i = 0; i < 10; i++) {
-            list.insert(i);
-            System.out.println(list.head.data);
+        if (head == null) {
+            head = newNode;  // new node becomes the head
+        } else {
+            Node current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = newNode;
         }
-
-        list.includes(0);
-        list.append(13);
-        list.insertBefore(0, 4);
-        list.insertAfter(0, 5);
-        list.kNodeFromEnd(5);
-//        list.toString();
-
     }
 
-    public void insert(int value) {
-        Node node = new Node(value);
-        node.next = this.head;
-        this.head = node;
+    public String toString() {
+        Node temp = head;
+        String returnString = "HEAD";
+        while (temp != null) {
+            returnString += " -> " + Integer.toString(temp.data);
+            temp = temp.next;
+        }
+        if (returnString.isEmpty()) {
+            returnString += " -> NULL";
+        }
+        return returnString + " -> NULL";
     }
-//    public String toString() {
-//        String result = "HEAD";
-//        Node current = this.head;
-//        while (current != null) {
-//            result = result + current.next;
-//        }
-//        result = result + "null";
-//        System.out.println(result);
-//        return result;
-//    }
 
     //https://stackoverflow.com/questions/5236486/adding-items-to-end-of-linked-list
     //https://www.javatpoint.com/java-program-to-insert-a-new-node-at-the-end-of-the-singly-linked-list
@@ -113,7 +123,7 @@ public class LinkedList {
             }
 
             current = current.next;
-            System.out.println(newNode.data);
+//            System.out.println(newNode.data);
         }
     }
 
@@ -136,7 +146,7 @@ public class LinkedList {
             }
 
             current = current.next;
-            System.out.println(newNode.data);
+//            System.out.println(newNode.data);
         }
     }
 
@@ -159,12 +169,31 @@ public class LinkedList {
 
         for (int i = 1; i < len - k + 1; i++)
             temp = temp.next;
-        System.out.println(temp.data);
+//        System.out.println(temp.data);
+    }
+
+    public LinkedList mergeLists(LinkedList list1, LinkedList list2) {
+
+        LinkedList mergedList = new LinkedList();
+        Node firstList = list1.head;
+        Node secondList = list2.head;
+
+        while(firstList != null || secondList != null) {
+            if(firstList != null) {
+                mergedList.insert(firstList.data);
+                firstList = firstList.next;
+                if(secondList != null) {
+                    mergedList.insert(secondList.data);
+                    secondList = secondList.next;
+                }
+            }
+            else if(secondList != null) {
+                mergedList.insert(secondList.data);
+                secondList = secondList.next;
+            }
+        }
+        return mergedList;
     }
 }
-
-//    public static Node merge(Node head1, Node head2) {
-//
-//}
 
 
