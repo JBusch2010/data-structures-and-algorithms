@@ -5,7 +5,7 @@
 2. Array Shift
 3. Binary Search
 4. Linked List
-5. Linked List Again
+5. Linked List Append, InsertBefore, InsertAfter
 6. More Linked List
 
 --------------------------------------------------------------
@@ -103,7 +103,7 @@ Space: O(1)
 
 --------------------------------------------------------------
 
-### 5. LinkedListPart2
+### 5. Linked List Append, InsertBefore, InsertAfter
 
 #### Challenge
 Write methods that add a node at the end and before and after a selected node
@@ -117,11 +117,14 @@ Time: O(log(n))
 Space: O(1)
 
 ### Code
-[Github](https://github.com/JBusch2010/data-structures-and-algorithms/tree/master/linked_list)
+[Code](https://github.com/JBusch2010/data-structures-and-algorithms/blob/master/code401challenges/linked_list/src/main/java/linked_list/LinkedList.java)
+
+[Tests](https://github.com/JBusch2010/data-structures-and-algorithms/blob/master/code401challenges/linked_list/src/test/java/linked_list/LinkedListTest.java)
 
 ### Contributions
 - Fabion Brooks
 - Jack Daniels
+-Manish KC
 - https://www.javatpoint.com/java-program-to-insert-a-new-node-at-the-end-of-the-singly-linked-list
 - https://stackoverflow.com/questions/5236486/adding-items-to-end-of-linked-list
 
@@ -130,7 +133,7 @@ Space: O(1)
 
 --------------------------------------------------------------
 
-### 5. LinkedListAgain
+### 5. Linked List K'th Node
 
 #### Challenge
 Given a Linked List and a number k, write a method that returns the value at the k’th node from the end of the Linked List.
@@ -161,7 +164,7 @@ Space: O(1)
 
 --------------------------------------------------------------
 
-### 6. LinkedListAgain
+### 6. Linked List Merge
 
 #### Challenge
 Write a function called mergeLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
@@ -177,6 +180,8 @@ Space: O(1)
 
 ### Code
 [Github](https://github.com/JBusch2010/data-structures-and-algorithms/blob/master/code401challenges/linked_list/src/main/java/linked_list/LinkedList.java)
+
+[Tests](https://github.com/JBusch2010/data-structures-and-algorithms/blob/master/code401challenges/linked_list/src/test/java/linked_list/LinkedListTest.java)
 
 ### Contributions
 - Manish KC
