@@ -9,6 +9,7 @@
 6. Linked List K'th Node
 7. Linked List Merge
 8. Stacks and Queues
+9. Pseudoqueue
 
 --------------------------------------------------------------
 
@@ -212,3 +213,34 @@ Space: O(1)
 ### Contributions
 - Fabion Brooks
 - Chris Coulon
+
+--------------------------------------------------------------
+
+### 8. Pseudoqueue
+
+#### Challenge
+- Create a brand new PseudoQueue class. 
+- Do not use an existing Queue. Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below), but will internally only utilize 2 Stack objects. Ensure that you create your class with the following methods:
+
+- enqueue(value) which inserts value into the PseudoQueue, using a first-in, first-out approach.
+- dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach.
+
+#### Approach & Efficiency
+- create two stacks
+- use the provided methods
+- return
+
+Big O Notation
+Time: O(1)
+Space: O(1)
+
+### Code
+[Github](https://github.com/JBusch2010/data-structures-and-algorithms/tree/master/code401challenges/stacksandqueues/src/main/java/stacksandqueues)
+
+[Tests](https://github.com/JBusch2010/data-structures-and-algorithms/tree/master/code401challenges/stacksandqueues/src/test/java/stacksandqueues)
+
+### Contributions
+- Fabion Brooks
+
+#### Solution
+![Whiteboard](assets/pseudoqueue.jpg)
