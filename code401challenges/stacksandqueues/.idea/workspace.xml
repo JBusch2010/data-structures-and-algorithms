@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a81ff4db-babc-455f-8313-18c0f76f9c64" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/stacksandqueues/PseudoQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stacksandqueues/PseudoQueueTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a81ff4db-babc-455f-8313-18c0f76f9c64" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -56,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/stacksandqueues/PseudoQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="255">
               <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
               <folding>
                 <element signature="e#521#522#0" expanded="true" />
@@ -69,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/stacksandqueues/PseudoQueueTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            <state relative-caret-position="390">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -217,7 +213,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566416003202" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566416821200" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -347,18 +343,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StackTest - 2019.08.19 at 13h 04m 35s.xml">
-      <configuration name="StackTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="QueueTest - 2019.08.19 at 13h 09m 34s.xml">
-      <configuration name="QueueTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="QueueTest_popTest - 2019.08.19 at 13h 20m 03s.xml">
-      <configuration name="QueueTest.popTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="QueueTest_dequeueTest - 2019.08.19 at 13h 21m 56s.xml">
-      <configuration name="QueueTest.dequeueTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="QueueTest_peekTest - 2019.08.19 at 13h 24m 41s.xml">
       <configuration name="QueueTest.peekTest" configurationId="JUnit" />
     </history-entry>
@@ -376,6 +360,18 @@
     </history-entry>
     <history-entry file="PseudoQueueTest_dequeue_single - 2019.08.21 at 12h 30m 53s.xml">
       <configuration name="PseudoQueueTest.dequeue_single" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PseudoQueueTest_enqueue_single - 2019.08.21 at 12h 31m 33s.xml">
+      <configuration name="PseudoQueueTest.enqueue_single" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PseudoQueueTest_multienqueue - 2019.08.21 at 12h 32m 18s.xml">
+      <configuration name="PseudoQueueTest.multienqueue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PseudoQueueTest_emptyDequeue - 2019.08.21 at 12h 32m 52s.xml">
+      <configuration name="PseudoQueueTest.emptyDequeue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PseudoQueueTest_enqueue - 2019.08.21 at 12h 33m 25s.xml">
+      <configuration name="PseudoQueueTest.enqueue" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -482,23 +478,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/stacksandqueues/PseudoQueue.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/stacksandqueues/PseudoQueueTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/stacksandqueues/PseudoQueueTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/stacksandqueues/PseudoQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="255">
+          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
           </folding>
         </state>
       </provider>
