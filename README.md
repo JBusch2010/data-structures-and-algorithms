@@ -10,6 +10,7 @@
 7. Linked List Merge
 8. Stacks and Queues
 9. Pseudoqueue
+10. Binary Tree and BST Implementation
 
 --------------------------------------------------------------
 
@@ -244,3 +245,27 @@ Space: O(1)
 
 #### Solution
 ![Whiteboard](assets/pseudoqueue.jpg)
+
+--------------------------------------------------------------
+
+### 10. Binary Tree and BST Implementation
+
+#### Challenge
+- Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
+- Create a BinaryTree class
+- Define a method for each of the depth first traversals called preOrder, inOrder, and postOrder which returns an array of the values, ordered appropriately.
+- At no time should an exception or stack trace be shown to the end user. Catch and handle any such exceptions and return a printed value or operation which cleanly represents the state and either stops execution cleanly, or provides the user with clear direction and output.
+
+- Create a BinarySearchTree class
+- Define a method named add that accepts a value, and adds a new node with that value in the correct location in the binary search tree.
+- Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
+
+### Code
+[Tests](https://github.com/JBusch2010/data-structures-and-algorithms/tree/master/code401challenges/tree/src/test/java/tree)
+
+[Github](https://github.com/JBusch2010/data-structures-and-algorithms/tree/master/code401challenges/tree/src/main/java/tree)
+
+### Contributions
+- Fabion Brooks
+- //https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
+- //https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
