@@ -217,7 +217,7 @@ Space: O(1)
 
 --------------------------------------------------------------
 
-### 8. Pseudoqueue
+### 9. Pseudoqueue
 
 #### Challenge
 - Create a brand new PseudoQueue class. 
