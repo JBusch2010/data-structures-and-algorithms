@@ -1,8 +1,5 @@
 package stacksandqueues;
 
-import javax.swing.*;
-import javax.swing.plaf.synth.SynthOptionPaneUI;
-
 public class Stack {
     public static Node top;
 

@@ -1,6 +1,6 @@
 package stacksandqueues;
 
-public class Queue {
+public class Queue<S> {
     public static Node front;
 
     public Queue() {
