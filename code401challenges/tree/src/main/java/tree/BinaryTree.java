@@ -8,10 +8,10 @@ import java.util.ArrayList;
 public class BinaryTree<T> {
 
     //root of the binary tree
-    Node<T> root;
+    public Node<T> root;
 
     public BinaryTree () {
-        root = null;
+        this.root = null;
     }
 
     public BinaryTree (Node<T> root) {
@@ -20,7 +20,7 @@ public class BinaryTree<T> {
 
     //preorder---------------
     public ArrayList<T> preOrder (Node<T> node, ArrayList<T> arrList) {
-        if (node == null) {
+        if (node != null) {
             arrList.add(node.key);
             //        System.out.println(node.key + " ");
             //recursive call on left child of tree
@@ -32,15 +32,15 @@ public class BinaryTree<T> {
         return arrList;
     }
 
-    private ArrayList<T> preOrder () {
+    ArrayList<T> preOrder () {
         return preOrder(this.root, new ArrayList<>());
     }
 //preorder---------------
 
 
-    //inorder----------------
+//inorder----------------
     public ArrayList<T> inOrder (Node<T> node, ArrayList<T> arrayList) {
-        if (node == null) {
+        if (node != null) {
             //recursive call on left child of tree
             inOrder(node.left, arrayList);
             arrayList.add(node.key);
@@ -51,15 +51,15 @@ public class BinaryTree<T> {
         return arrayList;
     }
 
-    private ArrayList<T> inOrder () {
-        return preOrder(this.root, new ArrayList<>());
+    ArrayList<T> inOrder () {
+        return inOrder(this.root, new ArrayList<>());
     }
 //inorder-----------------
 
 
 //postorder---------------
     public ArrayList<T> postOrder (Node<T> node, ArrayList<T> arrayList) {
-        if (node == null){
+        if (node != null){
             //recursive call on left child of tree
             postOrder(node.left, arrayList);
             //recursive call on right child of tree
@@ -70,8 +70,10 @@ public class BinaryTree<T> {
         return arrayList;
     }
 
-    private ArrayList<T> postOrder () {
+    ArrayList<T> postOrder () {
         return preOrder(this.root, new ArrayList<>());
     }
 //postorder---------------
 }
+
+

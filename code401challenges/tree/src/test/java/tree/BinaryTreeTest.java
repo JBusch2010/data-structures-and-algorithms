@@ -2,40 +2,59 @@ package tree;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 public class BinaryTreeTest {
 
     @Test
+    //https://stackoverflow.com/questions/7123555/assertnull-should-be-used-or-assertnotnull
     public void isEmpty () {
         BinaryTree tree = new BinaryTree();
-        if (tree == null) {
-        }
+
+        assertNull(tree.root);
     }
 
-
     @Test
-    public void preOrder () {
+    public void containsTest() {
         BinarySearchTree tree = new BinarySearchTree();
-        tree.add(25);
-        tree.add(20);
-        tree.add(27);
-        tree.add(15);
-        tree.add(22);
-        tree.add(26);
-        tree.add(30);
-        tree.add(29);
-        tree.add(32);
+        tree.add(6);
+        tree.add(4);
+        tree.add(8);
+        tree.add(3);
+        tree.add(5);
+        tree.add(7);
+        tree.add(9);
 
-        assertEquals("[15, 20, 22, 25, 26, 27, 29, 30, 32]", tree.inOrder().toString());
-    }
+        assertTrue(tree.contains(8));
     }
 
     @Test
-    public void inOrder () {
+    //https://www.baeldung.com/java-binary-tree
+    public void inOrderTest() {
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.add(6);
+        tree.add(4);
+        tree.add(8);
+        tree.add(3);
+        tree.add(5);
+        tree.add(7);
+        tree.add(9);
+
+        assertEquals("[3, 4, 5, 6, 7, 8, 9]", tree.inOrder().toString());
     }
 
+
     @Test
-    public void postOrder () {
+    public void preOrderTest() {
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.add(6);
+        tree.add(4);
+        tree.add(8);
+        tree.add(3);
+        tree.add(5);
+        tree.add(7);
+        tree.add(9);
+
+        assertEquals("[6, 4, 3, 5, 8, 7, 9]", tree.preOrder().toString());
     }
 }
