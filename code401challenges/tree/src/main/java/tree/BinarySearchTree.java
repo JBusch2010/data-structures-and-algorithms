@@ -1,50 +1,72 @@
 package tree;
 
 //https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
-public class BinarySearchTree {
-    class Node {
-        int key;
-        Node left;
-        Node right;
+public class BinarySearchTree extends BinaryTree<Integer> {
 
-        public Node(int item) {
-            key = item;
-            left = null;
-            right = null;
+    public BinarySearchTree() {
+        super();
+    }
+
+    public void add(int key) {
+        Node<Integer> addedNode = new Node<>(key);
+
+        //if the root is null add node
+        if(this.root == null) {
+            this.root = addedNode;
+
+        }
+        addNode(this.root, addedNode);
+
+    }
+
+    private void addNode(Node<Integer> node, Node<Integer> addedNode) {
+        if (addedNode.key < node.key) {
+
+            //if left node is null make it new node
+            if (node.left == null) {
+                node.left = addedNode;
+            } else {
+                addNode(node.left, addedNode);
+            }
+        } else if (addedNode.key > node.key) {
+
+            //do the same for right side if its null
+            if (node.right == null) {
+                node.right = addedNode;
+            } else {
+                addNode(node.right, addedNode);
+            }
+
         }
     }
-    //root of the tree
-    Node root;
 
-    BinarySearchTree() {
-        root = null;
+    // https://www.baeldung.com/java-binary-tree
+    public boolean contains(int key) {
+
+        //returning the method
+        return containsNodeRecursive(this.root, key);
     }
 
-    //calling addrec function
-    void add(int key) {
-        root = addRec(root, key);
-    }
+    private boolean containsNodeRecursive(Node<Integer> current, int key) {
+        //if current node is null return false
+        if (current == null) {
 
-    //recursive function to insert new key
-    Node addRec(Node root, int key) {
+            return false;
+        }
+        //if the node matches the key return true
+        if (key == current.key) {
 
-        //if the tree is empty return new node
-        if (root == null) {
-            root = new Node(key);
-            return root;
+            return true;
         }
 
-        //if not, recurse down the tree
-        if (key < root.key)
-            root.left = addRec(root.left, key);
-        else if (key > root.key)
-            root.right = addRec(root.right, key);
-        return root;
+        //checking left and right nodes
+        if (key < current.key) {
+
+            return containsNodeRecursive(current.left, key);
+        } else {
+
+            return containsNodeRecursive(current.right, key);
+        }
     }
 
-    public boolean contains (Node node, int key) {
-        if (node == null);
-        return false;
-
-    }
 }
