@@ -1,7 +1,12 @@
 package tree;
 
 //https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
-public class BinarySearchTree {
+public class BinarySearchTree extends BinaryTree<Integer> {
+
+    public BinarySearchTree() {
+        super();
+    }
+
     class Node {
         int key;
         Node left;
@@ -16,12 +21,9 @@ public class BinarySearchTree {
     //root of the tree
     Node root;
 
-    BinarySearchTree() {
-        root = null;
-    }
-
     //calling addrec function
-    void add(int key) {
+    public void add(int key) {
+        Node<Integer> addedNode = new Node<>(key);
         root = addRec(root, key);
     }
 

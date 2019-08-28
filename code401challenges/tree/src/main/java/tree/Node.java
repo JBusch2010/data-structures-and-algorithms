@@ -1,12 +1,12 @@
 package tree;
 
 //class containing left and right child nodes
-public class Node {
-    int key;
-    Node left;
-    Node right;
+public class Node<T> {
+    T key;
+    Node<T> left;
+    Node<T> right;
 
-    Node (int item){
+    Node (T item){
         key = item;
         left = null;
         right = null;
