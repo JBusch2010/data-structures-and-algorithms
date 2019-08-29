@@ -12,7 +12,7 @@
 9. Pseudoqueue
 10. Binary Tree and BST Implementation
 11. Fizz Buzz
-
+12. BreadthFirst
 --------------------------------------------------------------
 
 ### 1. ReverseArray
@@ -299,3 +299,24 @@ Space: O(1)
 
 #### Solution
 ![Whiteboard](assets/fizzbuzz.jpg)
+
+--------------------------------------------------------------
+
+### 11. Breadth-First
+
+#### Challenge
+- Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach; print every visited node’s value.
+
+### Code
+[Tests]()
+
+[Github]()
+
+### Contributions
+- Fabion Brooks
+- Manish KC
+- Matt Stuhring
+
+#### Solution
+![Whiteboard]()
+
