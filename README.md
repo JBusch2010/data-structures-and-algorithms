@@ -11,6 +11,7 @@
 8. Stacks and Queues
 9. Pseudoqueue
 10. Binary Tree and BST Implementation
+11. Fizz Buzz
 
 --------------------------------------------------------------
 
@@ -269,3 +270,32 @@ Space: O(1)
 - Fabion Brooks
 - //https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
 - //https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
+
+
+--------------------------------------------------------------
+
+### 11. FizzBuzz 
+
+#### Challenge
+- Write a function called FizzBuzzTree which takes a tree as an argument.
+- Without utilizing any of the built-in methods available to your language, determine weather or not the value of each node is divisible by 3, 5 or both, and change the value of each of the nodes:
+- If the value is divisible by 3, replace the value with “Fizz”
+- If the value is divisible by 5, replace the value with “Buzz”
+- If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+- Return the tree with its new values.
+
+### Code
+[Tests](https://github.com/JBusch2010/data-structures-and-algorithms/blob/master/code401challenges/tree/src/test/java/tree/FizzBuzzTest.java)
+
+[Github](https://github.com/JBusch2010/data-structures-and-algorithms/blob/master/code401challenges/tree/src/main/java/tree/FizzBuzz.java)
+
+### Contributions
+- Fabion Brooks
+- Manish KC
+- Matt Stuhring
+- Nhu Trinh
+- Padmapriya Ganapathi
+- Roman Gebrehiwot
+
+#### Solution
+![Whiteboard](assets/fizzbuzz.jpg)
