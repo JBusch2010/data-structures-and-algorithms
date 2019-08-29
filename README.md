@@ -5,8 +5,12 @@
 2. Array Shift
 3. Binary Search
 4. Linked List
-5. Linked List Again
-6. More Linked List
+5. Linked List Append, InsertBefore, InsertAfter
+6. Linked List K'th Node
+7. Linked List Merge
+8. Stacks and Queues
+9. Pseudoqueue
+10. Binary Tree and BST Implementation
 
 --------------------------------------------------------------
 
@@ -81,7 +85,7 @@ Space: O(1)
 
 --------------------------------------------------------------
 
-### 4. LinkedList
+### 4. Linked List
 
 #### Challenge
 Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
@@ -103,7 +107,7 @@ Space: O(1)
 
 --------------------------------------------------------------
 
-### 5. LinkedListPart2
+### 5. Linked List Append, InsertBefore, InsertAfter
 
 #### Challenge
 Write methods that add a node at the end and before and after a selected node
@@ -117,11 +121,14 @@ Time: O(log(n))
 Space: O(1)
 
 ### Code
-[Github](https://github.com/JBusch2010/data-structures-and-algorithms/tree/master/linked_list)
+[Code](https://github.com/JBusch2010/data-structures-and-algorithms/blob/master/code401challenges/linked_list/src/main/java/linked_list/LinkedList.java)
+
+[Tests](https://github.com/JBusch2010/data-structures-and-algorithms/blob/master/code401challenges/linked_list/src/test/java/linked_list/LinkedListTest.java)
 
 ### Contributions
 - Fabion Brooks
 - Jack Daniels
+-Manish KC
 - https://www.javatpoint.com/java-program-to-insert-a-new-node-at-the-end-of-the-singly-linked-list
 - https://stackoverflow.com/questions/5236486/adding-items-to-end-of-linked-list
 
@@ -130,7 +137,7 @@ Space: O(1)
 
 --------------------------------------------------------------
 
-### 5. LinkedListAgain
+### 6. Linked List K'th Node
 
 #### Challenge
 Given a Linked List and a number k, write a method that returns the value at the k’th node from the end of the Linked List.
@@ -161,7 +168,7 @@ Space: O(1)
 
 --------------------------------------------------------------
 
-### 6. LinkedListAgain
+### 7. Linked List Merge
 
 #### Challenge
 Write a function called mergeLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
@@ -178,6 +185,8 @@ Space: O(1)
 ### Code
 [Github](https://github.com/JBusch2010/data-structures-and-algorithms/blob/master/code401challenges/linked_list/src/main/java/linked_list/LinkedList.java)
 
+[Tests](https://github.com/JBusch2010/data-structures-and-algorithms/blob/master/code401challenges/linked_list/src/test/java/linked_list/LinkedListTest.java)
+
 ### Contributions
 - Manish KC
 - Chris Coulon
@@ -185,3 +194,78 @@ Space: O(1)
 #### Solution
 ![Whiteboard](assets/mergelist.jpg)
 
+
+--------------------------------------------------------------
+
+### 8. Stacks and Queues
+
+#### Challenge
+Create node, stack, and queue classes and create methods for them to pop and push nodes.
+
+Big O Notation
+Time: O(1)
+Space: O(1)
+
+### Code
+[Github](https://github.com/JBusch2010/data-structures-and-algorithms/tree/master/code401challenges/stacksandqueues/src/main/java/stacksandqueues)
+
+[Tests](https://github.com/JBusch2010/data-structures-and-algorithms/tree/master/code401challenges/stacksandqueues/src/test/java/stacksandqueues)
+
+### Contributions
+- Fabion Brooks
+- Chris Coulon
+
+--------------------------------------------------------------
+
+### 9. Pseudoqueue
+
+#### Challenge
+- Create a brand new PseudoQueue class. 
+- Do not use an existing Queue. Instead, this PseudoQueue class will implement our standard queue interface (the two methods listed below), but will internally only utilize 2 Stack objects. Ensure that you create your class with the following methods:
+
+- enqueue(value) which inserts value into the PseudoQueue, using a first-in, first-out approach.
+- dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach.
+
+#### Approach & Efficiency
+- create two stacks
+- use the provided methods
+- return
+
+Big O Notation
+Time: O(1)
+Space: O(1)
+
+### Code
+[Github](https://github.com/JBusch2010/data-structures-and-algorithms/tree/master/code401challenges/stacksandqueues/src/main/java/stacksandqueues)
+
+[Tests](https://github.com/JBusch2010/data-structures-and-algorithms/tree/master/code401challenges/stacksandqueues/src/test/java/stacksandqueues)
+
+### Contributions
+- Fabion Brooks
+
+#### Solution
+![Whiteboard](assets/pseudoqueue.jpg)
+
+--------------------------------------------------------------
+
+### 10. Binary Tree and BST Implementation
+
+#### Challenge
+- Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
+- Create a BinaryTree class
+- Define a method for each of the depth first traversals called preOrder, inOrder, and postOrder which returns an array of the values, ordered appropriately.
+- At no time should an exception or stack trace be shown to the end user. Catch and handle any such exceptions and return a printed value or operation which cleanly represents the state and either stops execution cleanly, or provides the user with clear direction and output.
+
+- Create a BinarySearchTree class
+- Define a method named add that accepts a value, and adds a new node with that value in the correct location in the binary search tree.
+- Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
+
+### Code
+[Tests](https://github.com/JBusch2010/data-structures-and-algorithms/tree/master/code401challenges/tree/src/test/java/tree)
+
+[Github](https://github.com/JBusch2010/data-structures-and-algorithms/tree/master/code401challenges/tree/src/main/java/tree)
+
+### Contributions
+- Fabion Brooks
+- //https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
+- //https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
