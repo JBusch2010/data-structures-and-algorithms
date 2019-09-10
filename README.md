@@ -14,6 +14,7 @@
 11. Fizz Buzz
 12. BreadthFirst
 13. InsertionSort
+14. MergeSort
 --------------------------------------------------------------
 
 ### 1. ReverseArray
@@ -338,3 +339,25 @@ Space: O(1)
 
 #### Solution
 ![Whiteboard]()
+
+--------------------------------------------------------------
+
+### 1. MergeSort
+
+#### Challenge
+ - 
+#### Approach & Efficiency
+ - 
+
+### Code
+[Github](https://github.com/JBusch2010/data-structures-and-algorithms/blob/master/code401challenges/mergesort/src/main/java/mergesort/MergeSort.java)
+
+### Contributions
+- https://www.geeksforgeeks.org/merge-sort/
+- https://www.baeldung.com/java-merge-sort
+
+
+#### Solution
+![Whiteboard]()
+
+--------------------------------------------------------------
