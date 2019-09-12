@@ -366,12 +366,19 @@ Space: O(1)
 ### 15. QuickSort
 
 #### Challenge
- - 
+ - Create quicksort algorithm
+ 
 #### Approach & Efficiency
- - 
+ - If the array contains only one element or zero elements then the array is sorted. 
+ - If the array contains more than one element then:
+ - Select an element from the array. This element is called the "pivot element". For example select the element in the middle  of the array.
+ - All elements which are smaller than the pivot element are placed in one array and all elements which are larger are placed in another array.
+- Sort both arrays by recursively applying Quicksort to them.
+- Combine the arrays.
 
 ### Code
 [Github](https://github.com/JBusch2010/data-structures-and-algorithms/blob/master/code401challenges/quicksort/src/main/java/quicksort/QuickSort.java)
+[Test](https://github.com/JBusch2010/data-structures-and-algorithms/blob/master/code401challenges/quicksort/src/test/java/quicksort/QuickSortTest.java)
 
 ### Contributions
 - https://www.programcreek.com/2012/11/quicksort-array-in-java/ (1st reference)
