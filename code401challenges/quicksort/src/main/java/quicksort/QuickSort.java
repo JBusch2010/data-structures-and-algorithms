@@ -8,10 +8,10 @@ public class QuickSort {
         if(left < right){
             int position = Partition(arr, left, right);
 
-            // Sort the left
-            //   QuickSort(arr, left, position - 1)
-            // Sort the right
-            //    QuickSort(arr, position + 1, right)
+            //recursively sort elements before
+            // partition and after partition
+            quickSort(arr, left, position-1);
+            quickSort(arr, position+1, right);
 
         }
     }
@@ -19,46 +19,34 @@ public class QuickSort {
 //    DEFINE position <-- Partition(arr, left, right)
 
     private int Partition (int[] arr, int left, int right) {
-        // set a pivot value as a point of reference
-        // DEFINE pivot <-- arr[right]
+
         // create a variable to track the largest index of numbers lower than the defined pivot
         int pivot = arr[right];
 
-        //    DEFINE low <-- left - 1
-        int low = left-1;
+        // index of smaller element
+        int i = left-1;
 
         // for i <- left to right do
         // if arr[i] <= pivot
-        for (int i = left; i < right; i++){
-            if(arr[i] <= pivot);
+        for (int j = left; j < right; j++){
+            if(arr[j] < pivot) {
 
-            // low++
-            low++;
-            // Swap(arr, i, low)
-            Swap(arr, i, low);
+                // low++
+                i++;
+
+                // Swap arr[i] and arr[j]
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
         }
-        return pivot;
+        //swap arr[i+j] and arr[right]
+        int temp = arr[i+1];
+        arr[i+1] = arr[right];
+        arr[right] = temp;
+
+        return i+1;
     }
 
-    // ALGORITHM Swap(arr, i, low)
-    private void Swap (int[] arr, int i, int low) {
-
-        //    DEFINE temp;
-        //    temp <-- arr[i]
-        int temp = arr[i];
-
-        //    arr[i] <-- arr[low]
-        arr[i] = arr[low];
-
-        //    arr[low] <-- temp
-        arr[low] = temp;
-    }
-
-//
-//    // place the value of the pivot location in the middle.
-//    // all numbers smaller than the pivot are on the left, larger on the right.
-//    Swap(arr, right, low + 1)
-//    // return the pivot index point
-//     return low + 1
-//
 }
+
