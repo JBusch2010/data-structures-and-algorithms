@@ -1,52 +1,62 @@
 package quicksort;
 
 public class QuickSort {
-//    ALGORITHM QuickSort(arr, left, right)
-    public void quickSort(int arr[], int left, int right){
-        //    if left < right
-        // Partition the array by setting the position of the pivot value
-        if(left < right){
-            int position = Partition(arr, left, right);
+    private int[] numbers;
+    private int number;
 
-            //recursively sort elements before
-            // partition and after partition
-            quickSort(arr, left, position-1);
-            quickSort(arr, position+1, right);
-
+    public void sort(int[] values) {
+        //check for empty/null array
+        if (values == null || values.length == 0){
+            return;
         }
+        this.numbers = values;
+        number = values.length;
+        quicksort(0, number - 1);
     }
-//    ALGORITHM Partition(arr, left, right)
-//    DEFINE position <-- Partition(arr, left, right)
 
-    private int Partition (int[] arr, int left, int right) {
+    private void quicksort (int low, int high) {
+        int i = low;
+        int j = high;
 
-        // create a variable to track the largest index of numbers lower than the defined pivot
-        int pivot = arr[right];
+        //get the pivot element from the middle of the list
+        int pivot = numbers[low + (high-low)/2];
 
-        // index of smaller element
-        int i = left-1;
+        //divide into two lists
+        while (i <= j) {
 
-        // for i <- left to right do
-        // if arr[i] <= pivot
-        for (int j = left; j < right; j++){
-            if(arr[j] < pivot) {
-
-                // low++
+            //if the current value from the left list is smaller than the pivot
+            //element then get the next element from the left list
+            while (numbers[i] < pivot) {
                 i++;
+            }
 
-                // Swap arr[i] and arr[j]
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
+            //if the current value from the right list is larger than the pivot
+            //element then get the next element from the right list
+            while (numbers[j] > pivot) {
+                j--;
+            }
+
+            // if we found a value in the left list which is larger than the
+            // pivot element and if we have found a value in the right list
+            // which is smaller than the pivot element then we exchange the values then increase i and j
+            if (i <= j) {
+                exchange(i, j);
+                i++;
+                j--;
             }
         }
-        //swap arr[i+j] and arr[right]
-        int temp = arr[i+1];
-        arr[i+1] = arr[right];
-        arr[right] = temp;
 
-        return i+1;
+        // witchcraft aka recursion
+        if (low < j)
+            quicksort(low, j);
+        if (i < high)
+            quicksort(i, high);
     }
 
+    private void exchange (int i, int j) {
+        int temp = numbers[i];
+        numbers[i] = numbers[j];
+        numbers[j] = temp;
+    }
 }
 
