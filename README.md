@@ -374,8 +374,9 @@ Space: O(1)
 [Github](https://github.com/JBusch2010/data-structures-and-algorithms/blob/master/code401challenges/quicksort/src/main/java/quicksort/QuickSort.java)
 
 ### Contributions
-- https://www.programcreek.com/2012/11/quicksort-array-in-java/
-- https://www.geeksforgeeks.org/quick-sort/
+- https://www.programcreek.com/2012/11/quicksort-array-in-java/ (1st reference)
+- https://www.geeksforgeeks.org/quick-sort/ (2nd reference - 1st refactor)
+- https://www.vogella.com/tutorials/JavaAlgorithmsQuicksort/article.html (3rd reference - 2nd refactor: i liked this code the   best, was easier for me to understand what was actually happening.)
 
 #### Solution
 ![Whiteboard]()
