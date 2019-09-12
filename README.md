@@ -375,6 +375,7 @@ Space: O(1)
 
 ### Contributions
 - https://www.programcreek.com/2012/11/quicksort-array-in-java/
+- https://www.geeksforgeeks.org/quick-sort/
 
 #### Solution
 ![Whiteboard]()
