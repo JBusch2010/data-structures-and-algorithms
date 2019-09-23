@@ -16,7 +16,7 @@
 13. InsertionSort
 14. MergeSort
 15. QuickSort
-Lab: Graph Implementation
+- Lab: Graph Implementation
 --------------------------------------------------------------
 
 ### 1. ReverseArray
