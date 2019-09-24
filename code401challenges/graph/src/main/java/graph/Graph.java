@@ -1,9 +1,7 @@
 package graph;
 
-import java.util.ArrayList;
-import java.util.Dictionary;
-import java.util.HashMap;
-import java.util.List;
+import javax.xml.soap.Node;
+import java.util.*;
 
 // https://github.com/codefellows/seattle-java-401d5/blob/master/class-35-graphs/implementation-examples/c-sharp/Classes/Graph.cs
 public class Graph<T> {
@@ -57,8 +55,35 @@ public class Graph<T> {
         return this.size;
     }
 
-    public void breadthFirst(){
-        
+    public ArrayList<Vertex<T>> breadthFirst(Vertex<T> node) {
+        // Extend your graph object with a breadth-first traversal method that accepts a starting node
+        // Without utilizing any of the built-in methods available to your language,
+        // return a collection of nodes in the order they were visited. Display the collection
+
+        ArrayList<Vertex<T>> result = new ArrayList<>();
+        Queue<Vertex<T>> queue = new LinkedList<>();
+        queue.add(node);
+        node.visisted = true;
+
+        while (queue.peek() != null) {
+            Vertex<T> v = queue.remove();
+            result.add(v);
+
+            List<Edge<T>> neighbors = getNeighbors(v);
+
+            for (int i = 0; i < neighbors.size(); i++) {
+                Vertex<T> vertexAtIndex = neighbors.get(i).vertex;
+
+                if (vertexAtIndex != null && !vertexAtIndex.visisted) {
+                    queue.add(vertexAtIndex);
+                    vertexAtIndex.visisted = true;
+                }
+            }
+        }
+
+        return result;
     }
+
+
 
 }
