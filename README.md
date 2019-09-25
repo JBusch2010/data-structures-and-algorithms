@@ -18,6 +18,7 @@
 15. QuickSort
 - Lab: Graph Implementation
   - BreadthFirst
+  - DepthFirst
 --------------------------------------------------------------
 
 ### 1. ReverseArray
@@ -441,5 +442,24 @@ Space: O(1)
 
 ### Contributions
 - https://java2blog.com/breadth-first-search-in-java/
+- https://github.com/mattstuhring/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/graph
+
+--------------------------------------------------------------
+
+### DepthFirst
+
+#### Challenge
+ - Conduct a depth first preorder traversal on a graph
+ 
+#### Approach & Efficiency
+- Create a function that accepts an adjacency list as a graph, and conducts a depth first traversal. Without utilizing any of the built-in methods available to your language, return a collection of nodes in their pre-order depth-first traversal order.
+
+### Code
+[Github](https://github.com/JBusch2010/data-structures-and-algorithms/tree/master/code401challenges/graph/src/main/java/graph)
+[Test](https://github.com/JBusch2010/data-structures-and-algorithms/tree/master/code401challenges/graph/src/test/java/graph)
+
+### Contributions
+- https://java2blog.com/breadth-first-search-in-java/
+- https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-35/resources/graphs.html
 - https://github.com/mattstuhring/data-structures-and-algorithms/tree/master/code401challenges/src/main/java/graph
 
