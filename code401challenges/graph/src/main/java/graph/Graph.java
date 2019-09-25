@@ -84,6 +84,36 @@ public class Graph<T> {
         return result;
     }
 
+    public ArrayList<T> depthFirst(Graph<T> graph, Vertex<T> node) {
+        Stack<Vertex<T>> stack = new Stack<>();
+        ArrayList<T> result = new ArrayList<>();
+
+        if (node == null) {
+            return null;
+        } else {
+            stack.push(node);
+            node.visisted = true;
+        }
+
+        while (!stack.isEmpty()) {
+            Vertex<T> current = stack.pop();
+            result.add(current.value);
+
+            List<Edge<T>> neighbors = getNeighbors(current);
+
+            for (int i = 0; i < neighbors.size(); i++) {
+                Vertex<T> vertexAtIndex = neighbors.get(i).vertex;
+
+                if (vertexAtIndex != null && !vertexAtIndex.visisted) {
+                    stack.push(vertexAtIndex);
+                    vertexAtIndex.visisted = true;
+                }
+            }
+        }
+
+        return result;
+    }
+
 
 
 }
