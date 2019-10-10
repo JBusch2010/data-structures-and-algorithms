@@ -1,6 +1,9 @@
 package linked_list;
 //https://www.geeksforgeeks.org/linked-list-set-1-introduction/
 
+import java.util.HashMap;
+import java.util.HashSet;
+
 //the head of the list
 public class LinkedList {
     public static Node head;
@@ -193,6 +196,30 @@ public class LinkedList {
             }
         }
         return mergedList;
+    }
+
+    public LinkedList removeDuplicates(LinkedList list) {
+        //will need a Hashset to store nodes
+        //will need a var for previous node
+        //will need a var for current node
+
+        HashSet<Integer> set = new HashSet<>();
+        Node node = list.head;
+        Node previous = null;
+
+        while (node != null){
+            int nodeval = node.data;
+
+            if (set.contains(nodeval)) {
+                previous.next = node.next;
+            } else {
+                set.add(nodeval);
+                previous = node;
+            }
+
+            node = node.next;
+        }
+        return list;
     }
 }
 
